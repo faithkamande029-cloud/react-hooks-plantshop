@@ -16,7 +16,7 @@ function App() {
       }
       return (res).json()
     })      
-    .then(setPlants)
+    .then((data) => setPlants(data))
     .catch(error => {console.error(error)}
     );
   }, [])
@@ -27,7 +27,11 @@ function App() {
   return (
     <div className="app">
       <Header />
-      <PlantPage plant={plants} addPlant={addPlant} searchTerm={searchTerm} />
+      <PlantPage 
+        plants={plants} 
+        addPlant={addPlant} 
+        searchTerm={searchTerm} 
+      />
     </div>
   );
 }

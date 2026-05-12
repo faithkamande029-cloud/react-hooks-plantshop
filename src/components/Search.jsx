@@ -10,7 +10,7 @@ function Search({ searchTerm, setFilteredPlants }) {
         id="search"
         placeholder="Type a name to search..."
         value={searchTerm}
-        onChange={(e) => plantSearch(e.target.value)}
+        onChange={(e) => setSearchTerm(e.target.value)}
       />
     </div>
   );
