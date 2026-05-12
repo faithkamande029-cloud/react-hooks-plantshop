@@ -10,7 +10,7 @@ function PlantPage({
   setSearchTerm 
 }) {
 
-  const filtered = plants.filter((plant) => 
+  const filteredPlants = plants.filter((plant) => 
     plant.name.toLowerCase().includes(searchTerm.toLowerCase())
   )
 
@@ -21,7 +21,7 @@ function PlantPage({
         searchTerm={searchTerm} 
         setSearchTerm={setSearchTerm} 
       />
-      <PlantList plants={filtered}/>
+      <PlantList plants={filteredPlants}/>
     </main>
   );
 }

@@ -16,7 +16,7 @@ function PlantCard({ plant }) {
           className="primary"
           onClick={handleToggle}
       >
-        {stock ? "In stock" : "Out of stock"}
+        {stock ? "In Stock" : "Out of Stock"}
       </button>
       
     </li>
